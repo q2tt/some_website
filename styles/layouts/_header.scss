@@ -1,0 +1,149 @@
+.header {
+  width: 100%;
+  height: 768px;
+  background-image: url(../img/Rectangle.png);
+  background-size: cover;
+  background-size: 100% 808px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+
+  @include _l {
+    height: 588px;
+  }
+
+  @include _m {
+    height: 588px;
+  }
+
+  @include _s {
+    height: 468px;
+  }
+
+  &__content {
+    width: 1180px;
+    @include flex-row-btw;
+    margin: 0 auto;
+    margin-top: 120px;
+
+    @include _xl {
+      width: 970px;
+    }
+
+    @include _l {
+      width: 750px;
+      margin-top: 40px;
+    }
+
+    @include _m {
+      max-width: 450px;
+      margin-top: 40px;
+    }
+
+    @include _s {
+      width: 320px;
+      margin-top: 20px;
+    }
+  }
+
+  &__content-text {
+    width: 616px;
+
+    @include _l {
+      width: 400px;
+    }
+
+    @include _m {
+      max-width: 420px;
+    }
+
+    @include _s {
+      max-width: 320px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    margin-bottom: 14px;
+
+    @include _l {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    @include _m {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    @include _s {
+      font-size: 32px;
+      line-height: 47px;
+    }
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 60px;
+
+    @include _l {
+      margin-bottom: 40px;
+    }
+
+    @include _m {
+      margin-bottom: 40px;
+    }
+
+    @include _s {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    @include _l {
+      width: 350px;
+      height: 440px;
+    }
+
+    @include _m {
+      display: none;
+    }
+    @include _s {
+      display: none;
+    }
+  }
+
+  &__google-img {
+    margin-right: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link-img {
+    @include _s {
+      width: 130px;
+      height: 48px;
+    }
+  }
+
+  &__link-img:hover {
+    width: 180px;
+    height: 62px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgb(180, 201, 241);
+
+    @include _s {
+      width: 130px;
+      height: 48px;
+    }
+  }
+}

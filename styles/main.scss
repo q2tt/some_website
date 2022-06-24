@@ -1,0 +1,15 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/fonts';
+
+@import 'base/reset';
+
+ @import 'components/benefit';
+@import 'components/revies';
+@import 'components/process';
+@import 'components/app';
+
+@import 'layouts/body';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/navigation';

@@ -1,0 +1,28 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+
+    @include _xxl {
+        width: 1199px;
+    }
+
+    @include _xl {
+        width: 100%;
+    }
+
+    @include _l {
+        width: 100%;
+    }
+
+    @include _m {
+        width: 100%;
+    }
+
+    @include _s {
+        width: 100%;
+    }
+}

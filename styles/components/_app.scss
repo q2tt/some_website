@@ -1,0 +1,215 @@
+.app {
+  width: 100%;
+  @include flex-row-btw;
+  margin-top: 50px;
+  height: 700px;
+
+  @include _xl {
+    height: 550px;
+  }
+
+  @include _l {
+    margin-top: 50px;
+    height: 420px;
+  }
+
+  @include _m {
+    margin-top: 10px;
+    height: 700px;
+  }
+
+  @include _s {
+    margin-top: 10px;
+    height: 620px;
+  }
+
+  &__wrap {
+    @include flex-row;
+    width: 1106px;
+    margin-top: 98px;
+
+    @include _xl {
+      width: 970px;
+      margin: 0 auto;
+    }
+
+    @include _l {
+      width: 764px;
+      margin: 0 auto;
+      margin-top: 58px;
+    }
+
+    @include _m {
+      width: 420px;
+      margin: 0 auto;
+      margin-top: 58px;
+      @include flex-column;
+    }
+
+    @include _s {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 58px;
+      @include flex-column;
+    }
+  }
+
+  &__svg_1,
+  &__svg_2 {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    width: 10px;
+
+    @include _l {
+      display: none;
+    }
+
+    @include _m {
+      display: none;
+    }
+
+    @include _s {
+      display: none;
+    }
+  }
+
+  &__svg_2 {
+    justify-content: flex-end;
+  }
+
+  &__svg_1 img,
+  &__svg_2 img {
+    transform: rotate(180deg);
+  }
+
+  &__text {
+    margin: 99px 0 0 68px;
+    width: 444px;
+
+    @include _l {
+      margin: 79px 0 0 18px;
+      width: 390px;
+    }
+
+    @include _m {
+      margin: 50px 0 18px 0;
+      width: 420px;
+    }
+
+    @include _s {
+      margin: 49px 0 18px 0;
+      width: 300px;
+    }
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 15px;
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 59px;
+    color: $ligth-black;
+    text-align: center;
+    opacity: 0.5;
+
+    @include _xl {
+      margin: 99px 0 0 18px;
+      width: 444px;
+    }
+
+    @include _l {
+      margin-bottom: 39px;
+    }
+
+    @include _m {
+      margin-bottom: 39px;
+    }
+
+    @include _s {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__btns {
+    width: 363px;
+    margin: 0 auto;
+
+    @include _s {
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__btn-link {
+    width: 165px;
+    height: 52px;
+
+    @include _s {
+      width: 135px;
+      height: 42px;
+    }
+  }
+
+  &__btn-link:hover {
+    width: 166px;
+    height: 53px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px 3px #c9d7f2;
+
+    @include _s {
+      width: 137px;
+      height: 43px;
+    }
+  }
+
+  &__btn-google {
+    margin-right: 26px;
+
+    @include _s {
+      margin-right: 16px;
+    }
+  }
+
+  &__img-block {
+    @include _xl {
+      width: 450px;
+    }
+
+    @include _l {
+      width: 350px;
+    }
+
+    @include _m {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    @include _s {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+
+  &__img-phones {
+    @include _xl {
+      width: 450px;
+    }
+
+    @include _l {
+      width: 350px;
+    }
+
+    @include _m {
+      width: 400px;
+    }
+
+    @include _s {
+      width: 250px;
+    }
+  }
+}

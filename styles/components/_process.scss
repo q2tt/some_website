@@ -1,0 +1,105 @@
+.process {
+  width: 100%;
+  height: 476px;
+  background-color: $background;
+  box-sizing: border-box;
+  padding: 95px 0;
+
+  @include _l {
+    height: 416px;
+  }
+
+  @include _m {
+    padding: 65px 0;
+  }
+
+  &__title {
+    @include title;
+    color: $blue;
+  }
+
+  @include _s {
+    padding: 65px 0;
+  }
+
+  &__wrap {
+    width: 1000px;
+    @include flex-row-btw;
+    margin: 0 auto;
+    margin-top: 91px;
+
+    @include _xl {
+        width: 900px;
+    }
+
+    @include _l {
+        width: 700px;
+        margin-top: 61px;
+    }
+
+    @include _m {
+        width: 280px;
+        margin-top: 11px;
+        @include flex-column;
+    }
+
+    @include _s {
+        width: 220px;
+        margin-top: 11px;
+        @include flex-column;
+    }
+  }
+
+  &__block {
+    width: 224px;
+    text-align: center;
+
+    @include _m {
+      width: 280px;
+      height: 80px;
+      text-align: left;
+      padding: 0 0 30px 50px;
+    }
+
+    @include _s {
+      width: 220px;
+      height: 80px;
+      text-align: left;
+      padding: 0 0 30px 40px;
+    }
+  }
+
+  &__block svg {
+    margin-bottom: 41px;
+
+    @include _m{
+      margin: 0;
+      position: relative;
+      left: -80px;
+      top: 60px;
+    }
+
+    @include _s{
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      position: relative;
+      left: -60px;
+      top: 60px;
+    }
+  }
+
+  &__block-title {
+    @include title-h3;
+    color: $ligth-black;
+    margin-bottom: 10px;
+  }
+
+  &__txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $ligth-black;
+  }
+
+}

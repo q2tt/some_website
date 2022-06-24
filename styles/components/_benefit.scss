@@ -1,0 +1,365 @@
+.benefit {
+  height: 1478px;
+  box-sizing: border-box;
+
+  @include _m{
+    height: 1760px;
+  }
+
+  @include _s{
+    height: 1740px;
+  }
+
+  &__svg_1 {
+    width: 190px;
+    height: 199px;
+    position: absolute;
+    margin-left: 1250px;
+
+    @include _xxl {
+        width: 190px;
+        height: 199px;
+        position: absolute;
+        margin-left: 1009px;
+    }
+
+    @include _xl{
+      position: absolute;
+      right: 0;
+    }
+
+    @include _l{
+       position: absolute;
+       right: 0;
+    }
+
+    @include _m{
+      position: absolute;
+      right: 0;
+      margin-top: 120px;
+    }
+
+    @include _s{
+      display: none;
+    }
+  }
+
+  &__svg_2 {
+    width: 199px;
+    height: 199px;
+    position: relative;
+    margin-top: -129px;
+    left: 0;
+
+    @include _xl{
+      position: absolute;
+      margin-top: -129px;
+      left: 0;
+    }
+
+    @include _l{
+      position: absolute;
+      margin-top: -129px;
+      left: 0;
+    }
+
+    @include _m{
+      position: absolute;
+      left: 0;
+    }
+
+    @include _s{
+      display: none;
+      margin-top: -84px;
+    }
+  }
+
+  &__wrapper {
+    @include flex-row-btw;
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 42px;
+
+    @include _xl {
+      width: 990px;
+    }
+
+    @include _l{
+      width: 720px;
+    }
+
+    @include _m {
+      width: 420px;
+      margin-top: 130px;
+      @include flex-column;
+    }
+
+    @include _s{
+      width: 300px;
+      @include flex-column;
+      margin-top: 142px;
+    }
+
+  }
+
+  &__wrapper_column1 {
+    height: 1163px;
+    display: flex;
+    align-items: center;
+
+    @include _m{
+      height: auto;
+      margin-top: 50px;
+    }
+
+    @include _s{
+      height: auto;
+      margin-top: 50px;
+    }
+  }
+
+  &__wrapper_column2 {
+    height: 1230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include _m{
+      height: auto;
+      margin-top: 50px;
+    }
+
+    @include _s{
+      height: auto;
+      margin-top: 50px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    width: 385px;
+    position: relative;
+    left: 245px;
+    top: 150px;
+
+    @include _xl {
+      left: 120px;
+    }
+
+    @include _l{
+      left: 120px;
+    }
+
+    @include _l{
+      left: 40px;
+    }
+
+    @include _m{
+      left: 20px;
+      margin-top: -120px;
+    }
+
+    @include _s{
+      left: 20px;
+      margin-top: -130px;
+      width: 290px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__box-wpap {
+    @include flex-row;
+    width: 480px;
+
+    @include _l{
+      width: 345px;
+    }
+
+    @include _m {
+      width: 420px;
+    }
+
+    @include _s{
+     width: 300px;
+    }
+  }
+
+  &__box2-img,
+  &__box1-img,
+  &__box3-img {
+    width: 153px;
+    height: 153px;
+
+    @include _l{
+      display: none;
+    }
+
+    @include _m{
+      display: none;
+    }
+
+    @include _s{
+      display: none;
+    }
+  }
+
+  &__box {
+    width: 380px;
+    height: 525px;
+    box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 48px;
+    z-index: 3;
+    background-color: #ffffff;
+
+    @include _l{
+      width: 330px;
+    }
+
+    @include _m{
+      width: 420px;
+      height: 425px;
+      padding: 18px 37px
+    }
+
+    @include _s{
+      width: 300px;
+      height: 425px;
+      padding: 18px 37px;
+    }
+  }
+
+  &__box-title {
+    @include title-h3;
+    margin: 56px 0 16px 0;
+
+    @include _m{
+      margin: 16px 0 16px 0;
+    }
+
+    @include _s{
+      margin: 16px 0 16px 0;
+    }
+  }
+
+  &__box-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #0f001a;
+    opacity: 0.6;
+    margin-bottom: 62px;
+
+    @include _m{
+      margin-bottom: 42px;
+    }
+
+    @include _s{
+      margin-bottom: 42px;
+    }
+  }
+
+  &__box-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 10px;
+    color: $blue;
+    text-decoration: none;
+
+    @include _m{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 10px;
+      color: $blue;
+      text-decoration: none;
+    }
+
+    @include _s{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 10px;
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  &__box svg {
+    margin-left: 25px;
+  }
+
+  &__box1-img {
+    position: relative;
+    margin-top: 200px;
+    left: 50px;
+    z-index: 1;
+  }
+
+  &__box2-img {
+    position: relative;
+    left: -75px;
+    top: -75px;
+    z-index: 1;
+  }
+
+  &__box2 {
+    padding: 0;
+  }
+
+  &__box .benefit__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__box2 .benefit__icon {
+    display: block;
+    margin: 0 auto;
+    margin-top: -20px;
+    width: 224px;
+    height: auto;
+  }
+
+  &__box2 .benefit__box-title,
+  &__box2 .benefit__box-txt,
+  &__box2 .benefit__box-link {
+    padding: 0 40px;
+  }
+
+  &__box2 .benefit__box-title {
+    margin-top: 64px;
+
+    @include _m{
+      margin-top: 34px;
+    }
+
+    @include _s{
+      margin-top: 34px;
+    }
+  }
+
+  &__box3-img {
+    position: relative;
+    margin-top: 450px;
+    left: -75px;
+    z-index: 1;
+  }
+
+  &__box3-wpap {
+    @include _m{
+      margin-top: 50px;
+      flex-direction: row-reverse;
+    }
+
+    @include _s{
+      margin-top: 50px;
+      flex-direction: row-reverse;
+    }
+  }
+
+ }

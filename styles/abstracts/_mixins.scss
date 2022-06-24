@@ -1,0 +1,60 @@
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-row-btw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin logo {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 35px;
+}
+@mixin title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 27px;
+  text-align: center;
+}
+@mixin title-h3 {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bold;
+}
+@mixin _xxl {
+  @media (min-width: 1200px) and (max-width: 1440px){
+    @content;
+  }
+  
+}
+@mixin _xl {
+  @media (min-width: 992px) and (max-width: 1199px){
+    @content;
+  }
+  
+}
+@mixin _l {
+  @media (min-width: 768px) and (max-width: 991px){
+    @content;
+  }
+}
+@mixin _m {
+  @media (min-width: 480px) and (max-width: 767px){
+    @content;
+  }
+}
+@mixin _s {
+  @media (min-width: 320px) and (max-width: 479px){
+    @content;
+  }
+}
